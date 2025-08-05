@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.font-cormorant-regular {
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+}
+
+.font-cormorant-bold {
+  font-family: var(--font-cormorant);
+  font-weight: 700;
+}
+
