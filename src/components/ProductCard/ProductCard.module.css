@@ -1,0 +1,37 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 0 8px;
+}
+
+.price {
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
+
+.rating {
+  margin-top: 12px;
+}

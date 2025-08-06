@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 1rem 0 2rem;
+  max-width: 500px;
+}
+
+.homeLink {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.homeLink:hover {
+  background-color: #2980b9;
+}
