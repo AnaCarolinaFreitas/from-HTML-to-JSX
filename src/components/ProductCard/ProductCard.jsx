@@ -1,17 +1,23 @@
 import React from "react";
 import styles from "./ProductCard.module.css";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ title, price, description, image, rating }) {
+  const titleExibido = title ? title : "Produto sem nome";
+  const precoExibido = price ? price : "Preço indisponível";
+  const descricaoExibida = description ? description : "Descrição não disponível";
+  
+  const avaliacaoExibida = rating ? rating.count : "Sem avaliações";
+  
   return (
     <div className={styles.card}>
-      <img src={product.image} alt={product.title} className={styles.image} />
-      <h2 className={styles.name}>{product.title}</h2>
-      <p className={styles.price}>{product.price}</p>
-      <p className={styles.description}>{product.description}</p>
+      <img src={image} alt={titleExibido} className={styles.image} />
+      <h2 className={styles.name}>{titleExibido}</h2>
+      <p className={styles.price}>{precoExibido}</p>
+      <p className={styles.description}>{descricaoExibida}</p>
       <div className={styles.rating}>
-        <span>{'⭐'.repeat(product.rating.stars)}</span>
-        <span>({product.rating.count})</span>
-        <span className={styles.reviews}>{product.rating.reviews} avaliações</span>
+        <span>{rating && rating.stars ? '⭐'.repeat(rating.stars) : ''}</span>
+        <span>({avaliacaoExibida})</span>
+        <span className={styles.reviews}>{rating && rating.reviews ? rating.reviews : 0} avaliações</span>
         </div>
       </div>
   );

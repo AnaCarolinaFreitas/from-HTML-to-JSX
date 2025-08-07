@@ -25,7 +25,13 @@ export default function Home() {
 
       <div className={styles.products}>
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard 
+          key={product.id} 
+          image={product.image}
+          title={product.title} 
+          price={product.price} 
+          description={product.description} 
+          rating={product.rating} />
         ))}
       </div>
       </main>
